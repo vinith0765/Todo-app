@@ -17,10 +17,6 @@ def deletebasic(request,proj_id):
     item_to_delete.delete()
     return HttpResponseRedirect('/proj/')
 
-def deletebasic(request,proj_id):
-    item_to_delete=basicmodel.objects.get(id=proj_id)
-    item_to_delete.delete()
-    return HttpResponseRedirect('/proj/')
 
 
     
